@@ -1,0 +1,148 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  font-family: "Montserrat", "Fraunces";
+  font-size: 14px;
+  background-color: hsl(30deg, 38%, 92%);
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+}
+section .whole {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 340px;
+  height: 570px;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+section .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("../images/image-product-mobile.jpg");
+  background-size: contain;
+  width: 340px;
+  height: 240px;
+  background-size: cover;
+}
+section .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  height: 330px;
+  background-color: white;
+  border-bottom-right-radius: 10px;
+  color: hsl(228deg, 12%, 48%);
+}
+section .text h3 {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+section .text h1 {
+  font-size: 32px;
+  font-family: "Fraunces";
+  color: black;
+}
+section .text p:first-of-type {
+  line-height: 25px;
+}
+section .text p:last-of-type {
+  color: hsl(158deg, 36%, 37%);
+  font-size: 32px;
+  font-weight: bold;
+}
+section .text p:last-of-type span {
+  display: inline-block;
+  padding-left: 20px;
+  color: hsl(228deg, 12%, 48%);
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: line-through;
+}
+section .text button {
+  height: 40px;
+  background-color: hsl(158deg, 36%, 37%);
+  color: hsl(0deg, 0%, 100%);
+  border: none;
+  border-radius: 5px;
+  font-family: "Montserrat";
+}
+section .text button span {
+  padding: 10px;
+}
+section .text button:hover {
+  cursor: pointer;
+  background-color: hsl(212deg, 21%, 14%);
+}
+
+@media (min-width: 1440px) {
+  .whole {
+    width: 600px;
+    height: 450px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .img {
+    width: 300px;
+    height: 450px;
+    background-position: 50% 50%;
+    background-image: url("../images/image-product-desktop.jpg");
+  }
+  .text {
+    width: 300px;
+    height: 450px;
+  }
+}/*# sourceMappingURL=style.css.map */
